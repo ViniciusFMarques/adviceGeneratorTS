@@ -13,7 +13,6 @@ export default function Card(){
       const response = await AdvicesService.getAdvice();
       setAdviceObject(response.slip);
     })()
-    console.log('entrou useeffect')
   }, [])
 
  async function handleSetAdviceObject(){
